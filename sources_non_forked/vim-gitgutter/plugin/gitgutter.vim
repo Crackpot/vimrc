@@ -50,12 +50,12 @@ let g:gitgutter_sign_modified        = get(g:, 'gitgutter_sign_modified', '~')
 let g:gitgutter_sign_removed         = get(g:, 'gitgutter_sign_removed', '_')
 
 if gitgutter#utility#supports_overscore_sign()
-  let g:gitgutter_sign_removed_first_line = get(g:, 'gitgutter_sign_removed_first_line', '‾')
+  let g:gitgutter_sign_removed_first_line = get(g:, 'gitgutter_sign_removed_first_line', '￣')
 else
   let g:gitgutter_sign_removed_first_line = get(g:, 'gitgutter_sign_removed_first_line', '_^')
 endif
 
-let g:gitgutter_sign_removed_above_and_below = get(g:, 'gitgutter_sign_removed_above_and_below', '_¯')
+let g:gitgutter_sign_removed_above_and_below = get(g:, 'gitgutter_sign_removed_above_and_below', '_-')
 let g:gitgutter_sign_modified_removed        = get(g:, 'gitgutter_sign_modified_removed', '~_')
 let g:gitgutter_git_args                     = get(g:, 'gitgutter_git_args', '')
 let g:gitgutter_diff_relative_to             = get(g:, 'gitgutter_diff_relative_to', 'index')
